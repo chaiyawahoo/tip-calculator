@@ -11,7 +11,7 @@ function calculateTip() {
 
     const tipAmount = billValue * tipValue / 100;
 
-    display.innerText = tipAmount.toFixed(2);
+    display.innerText = `Tip Amount: $${tipAmount.toFixed(2)}`;
 }
 
 calculateTip();

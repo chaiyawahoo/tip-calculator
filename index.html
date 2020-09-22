@@ -2,13 +2,22 @@
 <html>
     <head>
         <title>Tip Calculator</title>
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <main>
-            <h1>Tip Calc</h1>
+            <h1>Tip Calculator</h1>
+            <div id="inputs">
+                <div>
+                    <label for="bill">Bill</label>
+                    <input name="bill" id="bill" value="10.00" type="number">
+                </div>
+                <div>
+                    <label for="tip">Tip</label>
+                    <input name="tip" id="tip" value="15" type="number">
+                </div>
+            </div>
             <div id="display">0.00</div>
-            <input id="bill" value="10.00" type="number">
-            <input id="tip" value="15" type="number">
         </main>
     <script src="./script.js"></script>
     </body>
