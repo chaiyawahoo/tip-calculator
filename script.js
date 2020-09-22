@@ -12,11 +12,11 @@ function calculateTip() {
     const tipValue = parseInt(tipInput.value);
     const peopleValue = parseInt(peopleInput.value);
 
-    const tipAmount = billValue * tipValue / 100 / peopleValue;
-    const totalAmount = tipAmount + billValue / peopleValue;
+    const tipAmount = billValue * tipValue / 100;
+    const totalAmount = tipAmount + billValue;
 
-    display.innerHTML = `<div>Tip Per Person: $${tipAmount.toFixed(2)}</div>
-    <div>Total Per Person: $${totalAmount.toFixed(2)}</div>`;
+    display.innerHTML = `<div>Tip Per Person: $${(tipAmount / peopleValue).toFixed(2)}</div>
+    <div>Total Per Person: $${(totalAmount / peopleValue).toFixed(2)}</div>`;
 }
 
 calculateTip();
