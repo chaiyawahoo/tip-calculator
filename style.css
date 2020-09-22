@@ -38,8 +38,16 @@ input {
     border: 1px solid black;
     background-color: #def;
     font-size: 0.75rem;
-    margin: 1em;
+    margin: 1em 0;
     padding: 0.25em;
+}
+
+.add, .subtract {
+    border: 1px solid black;
+    font-size: 0.75rem;
+    padding: 0.25em;
+    width: 2em;
+    margin: -0.31rem;
 }
 
 #display {
